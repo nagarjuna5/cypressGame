@@ -6,4 +6,6 @@ node_modules/.bin/cypress open
 
 Screenshot
 
-[[https://github.com/nagarjuna5/cypressGame/blob/master/report_screenshot.png|alt=octocat]]
+<img src="https://github.com/nagarjuna5/cypressGame/blob/master/report_screenshot.png?sanitize=true&raw=true" />
+
+
