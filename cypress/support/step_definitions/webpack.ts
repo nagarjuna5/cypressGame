@@ -27,16 +27,16 @@ And(`I click on search button`, () => {
 
 Then(`I should see list of results`, () => {
   myAssertion();
-  cy.get(':nth-child(2) > .productHeader > h2 > a')
+  main.clickOnResults()
   .should('have.text','Red Dead Redemption 2')
 });
 
 And(`I navigate to detail page`, () => {
-  cy.get(':nth-child(2) > .productHeader > h2 > a').click();
+  main.navigateToDetail().click();
 });
 
 Then(`I should see price details`, () => {
-  cy.get('.btnMint > .addToBasket > .btnName')
+  main.getPriceText()
   .should('have.text', 'Buy New')
 });
 
